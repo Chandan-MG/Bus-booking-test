@@ -1,0 +1,10 @@
+.item{
+    display: flex;
+}
+
+span{
+    margin-right: 1rem;
+}
+button{
+    margin-right: 0.5rem;
+}

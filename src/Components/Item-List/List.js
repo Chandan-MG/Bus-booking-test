@@ -8,10 +8,13 @@ const List = (props) => {
                 props.items.map((bus) => (
                     <Item
                         key={bus.id}
+                        id={bus.id}
                         name={bus.name}
                         email={bus.email}
                         phone={bus.phone}
                         busNumber = {bus.busNumber}
+                        onDeleteBus={props.onDeleteBus}
+                        onEditBus={props.onEditBus}
                     />
                 ))
             }

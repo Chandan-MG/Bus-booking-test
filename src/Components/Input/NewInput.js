@@ -2,11 +2,12 @@ import React from "react";
 import Input from "./Input";
 
 const NewInput = (props) => {
+    
 
     const savedBusHandler = (buses) =>{
         const busesData = {
             ...buses,
-            id: Math.random().toString
+            id : Math.random().toString()
         }
         props.onAddBus(busesData);
     }
